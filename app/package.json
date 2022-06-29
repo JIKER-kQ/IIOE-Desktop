@@ -1,0 +1,26 @@
+{
+  "name": "iioe_desktop",
+  "productName": "iioe",
+  "version": "1.0.0",
+  "description": "IIOE - Enhancing the Access to Quality Higher Education for All",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "UNESCO",
+    "email": "liukai9106@gmail.com",
+    "url": "https://www.iioe.org/"
+  },
+  "scripts": {
+    "electron-rebuild": "yarn rebuild-sqlite3 && node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild",
+    "rebuild-sqlite3": "electron-rebuild -f -w sqlite3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.95.6",
+    "sqlite3": "5.0.0"
+  },
+  "devDependencies": {
+    "@types/react-text-truncate": "^0.14.0",
+    "electron-rebuild": "^2.3.5"
+  }
+}

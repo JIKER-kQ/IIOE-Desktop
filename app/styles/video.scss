@@ -1,0 +1,157 @@
+.video-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  .video-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #3E4150;
+    .video-header {
+      display: flex;
+      height: 60px;
+      align-items: center;
+      padding-left: 20px;
+      button {
+        cursor: pointer;
+        background-color: transparent;
+      }
+      img {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .video-field{
+      display: flex;
+      width: 900px;
+      height: 506px;
+      background-color: #000000;
+    }
+    .subtitle-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 0 20px;
+      .subtitle-field {
+        min-height: -webkit-min-content;
+        display: flex;
+        flex-direction: column;// <div className="chapter-title"></div>
+        min-height: min-content;
+        .chapter-title {
+          padding-top: 24px;
+          padding-bottom: 34px;
+          line-height: 32px;
+          font-size: 20px;
+          font-weight: 500;
+          color: #ffffff;
+        }
+        .chapter-list {
+          display: flex;
+          flex-direction: column;
+          .subtitle-item {
+            display: flex;
+            .subtitle-time {
+              display: flex;
+              width: 80px;
+              height: 32px;
+              line-height: 32px;
+              color: #ffffff;
+              font-size: 18px;
+            }
+            .subtitle-text {
+              display: flex;
+              flex: 1;
+              line-height: 32px;
+              color: #ffffff;
+              font-size: 18px;
+              &.active {
+                span {
+                  background-color: #5693D1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .chapter-container {
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    flex: 1;
+    background-color: #194C81;
+    overflow-y: auto;
+    .course-title {
+      line-height: 28px;
+      font-size: 30px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .chapter-section {
+      display: flex;
+      flex-direction: column;
+      padding: 26px 18px 16px 18px;
+      flex: 1;
+      .folder-field {
+        padding-top: 32px;
+        .folder-title {
+          line-height: 26px;
+          font-weight: 500;
+          font-size: 20px;
+          color: #ffffff;
+        }
+        .course-field {
+          padding-top: 16px;
+          .chapter-item {
+            display: flex;
+            height: 48px;
+            cursor: pointer;
+          }
+          .chapter-time {
+            margin-left: 24px;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            color: #DFE3E9;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: right;
+          }
+          .chapter-play {
+            display: flex;
+            margin-left: 24px;
+            width: 48px;
+            height: 48px;
+            justify-content: flex-end;
+            align-items: center;
+            img {
+              display: block;
+              width: 18px;
+              height: 18px;
+            }
+          }
+          .chapter-title {
+            display: flex;
+            flex: 1;
+            height: 48px;
+            line-height: 48px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: normal;
+            overflow: hidden;
+            flex-grow: 1;
+            span {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              flex-grow: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

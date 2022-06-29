@@ -1,0 +1,114 @@
+@import '~video-react/styles/scss/video-react';
+@import '../styles/home.scss';
+@import '../styles/login.scss';
+@import '../styles/course.scss';
+@import '../styles/course.list.scss';
+@import '../styles/video.scss';
+@import '../styles/versionPopView.scss';
+@import '../styles/slider.scss';
+@import '../styles/course.rate.scss';
+@import '../styles/course.player.scss';
+@import '../styles/me.scss';
+@import '~react-toastify/dist/ReactToastify.css';
+@import '../styles/me.delete.scss';
+@import '~react-datepicker/dist/react-datepicker.css';
+@import '../styles/offline.home.scss';
+@import '../styles/import.pop.scss';
+@import '../styles/offline.list.scss';
+@import '../styles/offline.detail.scss';
+@import '../styles/about.us.scss';
+@import '../styles/library.scss';
+@import '../styles/course.exit.scss';
+
+.world {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.top-header {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0F3FA;
+  -webkit-app-region: drag;
+  .left-section {
+    display: flex;
+    button {
+      display: flex;
+      cursor: pointer;
+      margin-left: 20px;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      -webkit-app-region: no-drag;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .header-logo {
+    display: block;
+    margin-left: 20px;
+    width: 132px;
+    height: 32px;
+  }
+  .right-section {
+    display: flex;
+    margin-right: 20px;
+    button{
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      background-color: transparent;
+      cursor: pointer;
+      -webkit-app-region: no-drag;
+      img {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.auth-header {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-app-region: drag;
+  .header-logo {
+    display: block;
+    margin-left: 20px;
+    width: 132px;
+    height: 32px;
+  }
+  .right-section {
+    display: flex;
+    margin-right: 20px;
+    button{
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-left: 20px;
+      background-color: transparent;
+      cursor: pointer;
+      -webkit-app-region: no-drag;
+      img {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.top-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}

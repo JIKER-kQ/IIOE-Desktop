@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IIOE</title>
+    <script>
+        (function(win, export_obj) {
+            win['TeaAnalyticsObject'] = export_obj;
+            if (!win[export_obj]) {
+                function _collect() {
+                    _collect.q.push(arguments);
+                }
+                _collect.q = _collect.q || [];
+                win[export_obj] = _collect;
+            }
+            win[export_obj].l = +new Date();
+        })(window, 'collectEvent');
+    </script>
+    <script async src="https://sf16-scmcdn-sg.ibytedtos.com/goofy/log-sdk/collect/collect-autotrack-rangers.js"></script>
+    <script>
+      (() => {
+        if (
+          typeof process !== 'object' ||
+          (typeof process === 'object' && !process.env.START_HOT)
+        ) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = './dist/style.css';
+          // HACK: Writing the script path should be done with webpack
+          document.getElementsByTagName('head')[0].appendChild(link);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root" class="root"></div>
+    <script>
+      if (typeof process === 'object') {
+        const scripts = [];
+
+        if (process.env.NODE_ENV === 'development') {
+          // Dynamically insert the DLL script in development env in the
+          // renderer process
+          scripts.push('../dll/renderer.dev.dll.js');
+        }
+        if (process.env.START_HOT) {
+          // Dynamically insert the bundled app script in the renderer process
+          const port = process.env.PORT || 1212;
+          scripts.push(`http://localhost:${port}/dist/renderer.dev.js`);
+        } else {
+          // scripts.push('./dist/renderer.prod.js');
+        }
+
+        if (scripts.length) {
+          document.write(
+            scripts
+              .map(script => `<script defer src="${script}"><\/script>`)
+              .join('')
+          );
+        }
+      }
+    </script>
+    <script>
+        window.collectEvent('init', {
+            app_id: 208944,//  Must be replaced by the "app_id" you have applied for
+            channel: 'sg',
+            log: true, // Enable debugging log
+            autotrack: true,
+        });
+        setTimeout(() => {
+          window.collectEvent('start')
+          // window.collectEvent('event', {
+          //   'from': 'index',
+          // })
+          // window.collectEvent('wind_event', {
+          //   'from': 'index',
+          // })
+        }, 1000);
+
+    </script>
+  </body>
+</html>

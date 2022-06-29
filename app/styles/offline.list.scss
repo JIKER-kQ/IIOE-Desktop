@@ -1,0 +1,86 @@
+.offline-list-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #E6E9F0;
+  .offline-list-header {
+    padding-top: 20px;
+    margin-left: 20px;
+    height: 28px;
+  }
+  .btn_delete {
+    display: flex;
+    width: 130px;
+    height: 28px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    img {
+      display: block;
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+    }
+    span {
+      font-size: 14px;
+      color: #B8BDC5;
+    }
+  }
+  .offline-list-section {
+    display: flex;
+    padding-left: 20px;
+    flex-direction: column;
+    .offline-list-section-header {
+      height: 54px;
+      line-height: 54px;
+      padding-left: 24px;
+      font-size: 14px;
+      color: #8C8C8C;
+    }
+    .offline-list-field {
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+      .offline-item {
+        display: flex;
+        height: 50px;
+        margin-bottom: 10px;
+        .button-select {
+          display: flex;
+          width: 14px;
+          margin-right: 10px;
+          justify-content: center;
+          align-items: center;
+          background-color: transparent;
+          cursor: pointer;
+          img {
+            display: block;
+            width: 14px;
+            height: 14px;
+          }
+        }
+        .offline-item-main {
+          display: flex;
+          flex: 1;
+          margin-left: 10px;
+          background-color: #DCDFE6;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          .course-name {
+            margin-left: 20px;
+            color: #313234;
+            font-size: 18px;
+          }
+          .course-time {
+            margin-right: 20px;
+            color: #313234;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

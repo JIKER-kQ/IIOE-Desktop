@@ -1,0 +1,50 @@
+.offline-container {
+  display: flex;
+  position: relative;
+  flex: 1;
+  color: #E6E9F0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .offline-image {
+    display: block;
+    width: 300px;
+    height: 168px;
+  }
+  .import-button {
+    display: block;
+    margin-top: 48px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #0175D2;
+  }
+  .import-text {
+    width: 420px;
+    line-height: 24px;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #606266;
+    text-align: center;
+  }
+  .handle-section {
+    display: flex;
+    margin-top: 76px;
+  }
+  .imported-list-button, .downloaded-list-button {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 62px;
+    text-align: center;
+    font-size: 18px;
+    color: #0175D2;
+    cursor: pointer;
+    border: 1px solid #0175D2;
+  }
+  .downloaded-list-button {
+    margin-left: 20px;
+  }
+}

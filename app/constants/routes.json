@@ -1,0 +1,18 @@
+{
+  "HOME": "/",
+  "COUNTER": "/counter",
+  "LOCALPLAYLIST": "/local/playList",
+  "LOGIN": "/login",
+  "ME": "/me",
+  "COURSE": "/course/detail/",
+  "COURSEVIDEO": "/course/video/",
+  "COURSELIST": "/course/list/",
+  "LOCALPLAYER": "/local/player/",
+  "OFFLINELIST": "/offline/list",
+  "OFFLINEDETAIL": "/offline/detail",
+  "OFFLINEPLAYER": "/offline/player/",
+  "DOWNLOADLIST": "/download/list",
+  "DOWNLOADDETAIL": "/download/detail",
+  "ABOUTUS": "/about/us",
+  "LIBRARY":"/library"
+}

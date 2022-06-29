@@ -1,0 +1,15 @@
+.player-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E9F0;
+  video {
+    width: 88%;
+    height: 88%;
+    object-fit: contain;
+  }
+}

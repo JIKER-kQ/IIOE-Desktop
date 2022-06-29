@@ -1,0 +1,190 @@
+.slider-container {
+  position: relative;
+  z-index: 10;
+  .top-slider-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    background-color: #184D81;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    .slider-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .avatar {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 42px;
+      height: 42px;
+      margin-top: 50px;
+      cursor: pointer;
+      background-color: transparent;
+      img {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        border-radius: 21px;
+        background-color: transparent;
+      }
+    }
+    .tab-item {
+      display: block;
+      margin-top: 60px;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      cursor: pointer;
+      button {
+        display: block;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+      &.about {
+        width: 46px;
+        img {
+          width: 46px;
+        }
+      }
+    }
+    .settings-item {
+      display: flex;
+      margin-bottom: 10px;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      cursor: pointer;
+      img {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .popup-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+    width: 188px;
+    padding: 8px 0;
+    background-color: white;
+    .item {
+      position: relative;
+      width: 100%;
+      height: 48px;
+      button {
+        background-color: transparent;
+      }
+      &:hover {
+        background-color: #F2F5FA;;
+      }
+      &.first-item {
+        &:hover {
+          .language-list {
+            display: flex;
+          }
+        }
+      }
+      .button-language {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      .button-logout {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      .icon-right {
+        display: block;
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+      }
+      .sub-item {
+        display: flex;
+        margin-left: 22px;
+        align-items: center;
+        img {
+          display: block;
+          width: 32px;
+          height: 32px;
+        }
+        span {
+          margin-left: 14px;
+          height: 32px;
+          line-height: 32px;
+          color: #313234;
+          font-size: 16px;
+        }
+      }
+    }
+    .version-item {
+      display: flex;
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      color: #8E9299;
+      font-size: 15px;
+      justify-content: center;
+      border-top: 1px solid #E1E3E6;
+    }
+    .language-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      left: 188px;
+      width: 188px;
+      bottom: 0px;
+      padding: 8px 0px;
+      background-color: white;
+      .language-item {
+        display: flex;
+        width: 100%;
+        height: 48px;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          background-color: #F2F5FA;;
+        }
+        span {
+          margin-left: 20px;
+          font-size: 16px;
+          // color: #0175D2;
+          color: #313234;
+          &.active-text {
+            color: #0175D2;
+          }
+        }
+        img {
+          display: block;
+          margin-right: 14px;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+
